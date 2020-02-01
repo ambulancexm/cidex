@@ -39,15 +39,9 @@ public class Article implements Serializable {
     @Column(name = "quantite")
     private int quantite;
 
-//    @ManyToOne
-////    @JoinTable(name = "article_ticket")
-//    @JoinTable(name="article_ticket",
-//       joinColumns = @JoinColumn(name = "article_id", 
-//                                 referencedColumnName = "idArticle"), 
-//       inverseJoinColumns = @JoinColumn(name = "group_id", 
-//                                 referencedColumnName = "idTicket"))        
-//            
-//    Ticket ticket;
+    @ManyToOne
+     private Ticket ticket ;
+
 
     public Article() {
     }

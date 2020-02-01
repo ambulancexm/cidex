@@ -59,7 +59,8 @@ public class Ticket extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 //        processRequest(request, response);
-        response.getWriter().println("Hello World!");
+//        response.getWriter().println("Hello World!");
+        request.getRequestDispatcher("/WEB-INF/ticket.jsp").forward(request, response);
     }
 
     /**
