@@ -17,9 +17,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author bulleux
  */
-@WebServlet(name = "Stock", urlPatterns = {"/stock"})
-public class Stock extends HttpServlet {
-
+@WebServlet(name = "FormulaireArticle", urlPatterns = {"/formulaire_article"})
+public class FormulaireArticle extends HttpServlet {
     /**
      * Handles the HTTP <code>GET</code> method.
      *
@@ -31,8 +30,7 @@ public class Stock extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-//        processRequest(request, response);
-        request.getRequestDispatcher("/WEB-INF/stock.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/formulaire_article.jsp").forward(request, response);
     }
 
     /**
