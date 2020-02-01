@@ -3,41 +3,40 @@
     <head>
         <title>Start Page</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--<link href="<c:url value='../WEB-INF/css/style.css' />" rel="stylesheet"/>-->
+        <link href="./css/style.css" rel="stylesheet" />
     </head>
 
 
     <body>
-        <style>
-            #col-gauche{
-                background-color:#0000ff;
-            }
-
-            #col-droite{
-                background-color:#ff9999;
-            }
-
-            .col{
-                width:50%; 
-            }
-        </style>
-        <table width="100%">
-            <tr>
-                <td id="col-gauche" class="col">
-                    <!--TODO action-->
-                    <form id="app-login" action="process.php">
-                        <fieldset>
-                            <legend>Login Details</legend>
-                            <label for="user-name">ARTICLE</label>
-                            <input name="code-barre" type="text" placeholder="saisir un code barre" required autofocus>
-                            <label for="password">Quantité</label>
-                            <input name="password" type="number" value="1" min="1" required>
-                            <input name="login" type="submit" value="Login">
-                        </fieldset>
-                    </form>
-                </td>
-                <td id="col-droite" class="col">Colonne droite</td>
-            </tr>
-        </table>
+        <header>
+            <nav id="entete">
+                <a href="ticket">HTML</a> |
+                <a href="#">CSS</a> |
+                <a href="#">JavaScript</a> |
+                <a href="#">jQuery</a>  
+            </nav>
+        </header>
+        <main>
+            <table>
+                <tr>
+                    <td id="col-gauche" class="col">
+                        <!--TODO action-->
+                        <form id="app-login" action="process.php">
+                            <fieldset>
+                                <legend>Login Details</legend>
+                                <label for="user-name">ARTICLE</label>
+                                <input name="code-barre" type="text" placeholder="saisir un code barre" required autofocus>
+                                <label for="password">Quantité</label>
+                                <input name="password" type="number" value="1" min="1" required>
+                                <input name="login" type="submit" value="Login">
+                            </fieldset>
+                        </form>
+                    </td>
+                    <td id="col-droite" class="col">Colonne droite</td>
+                </tr>
+            </table>
+        </main>
         <h1>Hello World!</h1>
     </body>
 </html>

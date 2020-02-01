@@ -11,30 +11,43 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
  *
- * 
+ *
  * @author bulleux
  */
 @Entity
 
-public class Article implements Serializable{
-    
+public class Article implements Serializable {
+
     @Id
     @Column(name = "id_article")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long idArticle;
-    
+
     @Column(name = "nom")
     private String nom;
-    
+
     @Column(name = "code_barre")
     private String codeBarre;
-    
+
     @Column(name = "quantite")
     private int quantite;
+
+//    @ManyToOne
+////    @JoinTable(name = "article_ticket")
+//    @JoinTable(name="article_ticket",
+//       joinColumns = @JoinColumn(name = "article_id", 
+//                                 referencedColumnName = "idArticle"), 
+//       inverseJoinColumns = @JoinColumn(name = "group_id", 
+//                                 referencedColumnName = "idTicket"))        
+//            
+//    Ticket ticket;
 
     public Article() {
     }
@@ -54,14 +67,12 @@ public class Article implements Serializable{
 
     @Override
     public String toString() {
-        return "Article{" + "id_article=" 
-                + idArticle + ", nom=" 
+        return "Article{" + "id_article="
+                + idArticle + ", nom="
                 + nom + ", codeBarre="
-                + codeBarre + ", quantite=" 
+                + codeBarre + ", quantite="
                 + quantite + '}';
     }
-    
-    
 
     public long getIdArticle() {
         return idArticle;
@@ -94,6 +105,5 @@ public class Article implements Serializable{
     public void setQuantite(int quantite) {
         this.quantite = quantite;
     }
-    
-    
+
 }

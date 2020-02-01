@@ -9,9 +9,8 @@ import fr.thomas.bdd.Article;
 import fr.thomas.bdd.Ticket;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
-import javax.persistence.RollbackException;
+import sun.rmi.runtime.Log;
 
 /**
  *
@@ -26,15 +25,19 @@ public class main {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory(PU);
         EntityManager em = emf.createEntityManager();
         
-        Article article = new Article("testArticle", "1234567890", 4);
-        Ticket ticket = new Ticket(6);
-        em.getTransaction().begin();
-        em.persist(article);
+//        Article article = new Article("testArticle2", "1234567890", 4);
+//        Article article1 = new Article("testArticle", "1234567", 4);
+//        Ticket ticket = new Ticket(8);
+//        System.out.println("test_article" + article.toString());
+//        
+//        
+//        em.getTransaction().begin();
+//        em.persist(article);
+//        em.persist(article1);
+//        em.persist(ticket);
+//        
+//        em.getTransaction().commit();
         
-        em.getTransaction().commit();
-        
-        em.persist(ticket);
-        em.getTransaction().commit();
         
         emf.close();
 

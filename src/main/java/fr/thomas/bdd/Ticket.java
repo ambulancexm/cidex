@@ -22,12 +22,12 @@ public class Ticket implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Column(name = "id_ticket")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idTicket;
     
     @Column(name = "quantite_ha")
     private int quantiteHa;
-
+    
     public Ticket() {
     }
 
