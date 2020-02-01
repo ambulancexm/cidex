@@ -18,7 +18,7 @@ import javax.persistence.Table;
  * 
  * @author bulleux
  */
-@Entity(name = "article")
+@Entity
 
 public class Article implements Serializable{
     
