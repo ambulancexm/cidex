@@ -8,9 +8,11 @@
 </head>
 <header>
     <nav id="entete">
-        <a href="index.html">ACCUEIL</a> |
+        <a href="index">ACCUEIL</a> |
         <a href="ticket">Creer un ticket</a> |
         <a href="stock">Mettre en stock</a> |
+        <a href="stock">Inscription</a> |
+        <a href="stock">Connexion</a> |
         <a href="#">Aide</a>  
     </nav>
 </header>

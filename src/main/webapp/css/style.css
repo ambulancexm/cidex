@@ -7,16 +7,30 @@ and open the template in the editor.
     Created on : 1 févr. 2020, 10:40:48
     Author     : bulleux
 */
+body{
+    margin:0;
+    padding:0; 
+    background-image: url("../images/money-2724241_1920.jpg"); 
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+}
+
 #col-gauche{
-    background-color:#0000ff;
+    /*background-color:#0000ff;*/
 }
 
 #col-droite{
-    background-color:#ff9999;
+    /*background-color:#ff9999;*/
 }
 nav {
-    background-color:#ff8888;
-    width: 100%;
+    /*background-color:#ff8888;*/
+    /*width: 100%;*/
+    margin-right: auto;    
+    margin-left: auto;    
+    width: 70%;    
+    max-width: 100%;    
+    min-width: 1000px;    
 }
 #entete{
     font-size: x-large;

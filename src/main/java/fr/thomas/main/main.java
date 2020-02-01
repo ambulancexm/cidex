@@ -7,9 +7,12 @@ package fr.thomas.main;
 
 import fr.thomas.bdd.Article;
 import fr.thomas.bdd.Ticket;
+import fr.thomas.check.CodeBarre;
+import java.io.IOException;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import org.json.simple.parser.ParseException;
 import sun.rmi.runtime.Log;
 
 /**
@@ -20,7 +23,7 @@ public class main {
 
     public static final String PU = "pu";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, ParseException {
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory(PU);
         EntityManager em = emf.createEntityManager();
@@ -38,7 +41,8 @@ public class main {
 //        
 //        em.getTransaction().commit();
         
-        
+        CodeBarre cBar = new CodeBarre();
+        System.out.println(cBar.toString());
         emf.close();
 
     }

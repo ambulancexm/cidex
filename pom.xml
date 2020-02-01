@@ -81,18 +81,18 @@
             <artifactId>javax.json-api</artifactId>
             <version>1.1.4</version>
         </dependency>
-<!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl-api -->
-<dependency>
-    <groupId>javax.servlet.jsp.jstl</groupId>
-    <artifactId>jstl-api</artifactId>
-    <version>1.2</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/javax.servlet.jsp.jstl-api -->
-<dependency>
-    <groupId>javax.servlet.jsp.jstl</groupId>
-    <artifactId>javax.servlet.jsp.jstl-api</artifactId>
-    <version>1.2.2</version>
-</dependency>
+        <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl-api -->
+        <dependency>
+            <groupId>javax.servlet.jsp.jstl</groupId>
+            <artifactId>jstl-api</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/javax.servlet.jsp.jstl-api -->
+        <dependency>
+            <groupId>javax.servlet.jsp.jstl</groupId>
+            <artifactId>javax.servlet.jsp.jstl-api</artifactId>
+            <version>1.2.2</version>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
         <dependency>
@@ -100,7 +100,18 @@
             <artifactId>spring-jdbc</artifactId>
             <version>5.2.3.RELEASE</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20190722</version>
+        </dependency>
 
         
     </dependencies>

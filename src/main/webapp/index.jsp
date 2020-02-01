@@ -1,23 +1,19 @@
+<%-- 
+    Document   : index
+    Created on : 1 févr. 2020, 15:22:09
+    Author     : bulleux
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Start Page</title>
+        <title>Page d'accueil</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="./css/style.css" rel="stylesheet" />
-        
     </head>
-
-
     <body>
-        
-        <header>
-            <nav id="entete">
-                <a href="ticket">HTML</a> |
-                <a href="#">CSS</a> |
-                <a href="#">JavaScript</a> |
-                <a href="#">jQuery</a>  
-            </nav>
-        </header>
+        <%@ include file="/WEB-INF/header.jsp" %>  
         <main>
             <table>
                 <tr>
@@ -34,7 +30,12 @@
                             </fieldset>
                         </form>
                     </td>
-                    <td id="col-droite" class="col">Colonne droite</td>
+                    <td id="col-droite" class="col">
+                        <ul>test 1 </ul>
+                        <ul>test 2 </ul>
+                        <ul>test 3 </ul>
+                        <ul>test 4 </ul>
+                    </td>
                 </tr>
             </table>
         </main>

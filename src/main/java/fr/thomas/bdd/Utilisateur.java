@@ -30,6 +30,9 @@ public class Utilisateur implements Serializable {
     @Column(name = "pwd")
     private String pwd;
     
+    @Column(name = "email")
+    private String Email;
+    
     public Utilisateur(String nomUser, String pwd) {
         this.nomUser = nomUser;
         this.pwd = pwd;
@@ -62,8 +65,18 @@ public class Utilisateur implements Serializable {
         this.id = id;
     }
 
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String Email) {
+        this.Email = Email;
+    }
+
     @Override
     public String toString() {
-        return "Utilisateur{" + "id=" + id + ", nomUser=" + nomUser + ", pwd=" + pwd + '}';
+        return "Utilisateur{" + "id=" + id + ", nomUser=" + nomUser + ", pwd=" + pwd + ", Email=" + Email + '}';
     }
+
+    
 }
