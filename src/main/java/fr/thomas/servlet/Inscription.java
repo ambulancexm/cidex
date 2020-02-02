@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author bulleux
  */
-@WebServlet(name = "FormulaireInscription", urlPatterns = {"/FormulaireInscription"})
+@WebServlet(name = "Inscription", urlPatterns = {"/inscription"})
 public class Inscription extends HttpServlet {
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -42,7 +42,7 @@ public class Inscription extends HttpServlet {
 
         /* Récupération de l'objet depuis la session */
         String chaine = (String) session.getAttribute("chaine");
-
+        request.getRequestDispatcher("/WEB-INF/formulaire_inscription.jsp").forward(request, response);
     }
 
     /**

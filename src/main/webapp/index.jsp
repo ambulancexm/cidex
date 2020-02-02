@@ -19,13 +19,14 @@
                 <tr>
                     <td id="col-gauche" class="col">
                         <!--TODO action-->
-                        <form id="app-login" action="process.php">
+                        <form id="app-login" action="stock">
                             <fieldset>
-                                <legend>Login Details</legend>
+                                <legend>Quel est cet article ?</legend>
                                 <label for="user-name">ARTICLE</label>
                                 <input name="code-barre" type="text" placeholder="saisir un code barre" required autofocus>
-                                <label for="password">Quantité</label>
-                                <input name="password" type="number" value="1" min="1" required>
+<!--                                <label for="password">Quantité</label>
+                                <input name="password" type="number" value="1" min="1" required>-->
+
                                 <input name="login" type="submit" value="Login">
                             </fieldset>
                         </form>

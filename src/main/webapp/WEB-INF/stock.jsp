@@ -13,6 +13,6 @@
     </head>
     <%@ include file="/WEB-INF/header.jsp" %>
     <body>
-        <h1>Hello World!</h1>
+        <h1>le code barre est ${requestScope.retour}</h1>
     </body>
 </html>

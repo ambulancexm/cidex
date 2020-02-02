@@ -32,6 +32,9 @@ public class Stock extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 //        processRequest(request, response);
+
+        String test = request.getParameter("code-barre");
+        request.setAttribute("retour", test);
         request.getRequestDispatcher("/WEB-INF/stock.jsp").forward(request, response);
     }
 
@@ -46,5 +49,6 @@ public class Stock extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+     
     }
 }
